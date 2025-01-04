@@ -1,0 +1,407 @@
+/* App.css */
+
+/* Global Styles */
+body {
+  background-color: #ffffff; 
+  color: #000000; 
+  margin: 0;
+  font-family: 'Elza', sans-serif;
+}
+
+/* Container */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 10px;
+  background-color: #f8f6f3;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* Hero Section */
+.hero {
+  padding: 18px 20px 0px; 
+  margin-bottom: 0px; 
+}
+
+.container {
+  max-width: 1350px; 
+  margin: 0 auto; 
+}
+
+/* Flexbox for Image and Text */
+.hero-content {
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  gap: 30px; 
+  flex-wrap: nowrap; 
+}
+
+/* Image Section */
+.hero-image {
+  flex: 1; 
+  display: flex; 
+  justify-content: center;
+  padding: 20px; 
+}
+
+.profile-image {
+  max-width: 500px; 
+  width: 100%; 
+  height: auto; 
+  margin-left: 75px; 
+}
+
+/* Text Section */
+.hero-text {
+  flex: 2; 
+  text-align: left; 
+  max-width: 600px; 
+  margin-left: auto; 
+  margin-right: 75px; 
+}
+
+.hero-text h1 {
+  font-size: 5.5rem;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.hero-intro {
+  font-family: "Inter", sans-serif; /* Font for "Hi, I’m" */
+  font-weight: 400;
+  letter-spacing: -4px;
+  display: block;
+  line-height: .9;
+}
+
+.hero-name {
+  display: inline-block; 
+  position: relative; 
+  font-family: "Recoleta", serif; /* Font for "Ray Banks" */
+  font-weight: bold; 
+  line-height: 1; 
+}
+
+.hero-name .underline {
+  position: absolute; /* Position relative to "Ray Banks" text */
+  left: 50%; /* Center the underline */
+  transform: translateX(-50%); /* Center align horizontally */
+  bottom: -45px; /* Push underline further down below the text */
+  width: 100%; 
+  height: auto; 
+}
+
+.hero-text p {
+  font-family: "Elza", sans-serif;
+  font-size: 2.3rem;
+  line-height: 1.2;
+  letter-spacing: -.25px;
+  font-weight: 100;
+}
+
+.underline {
+  max-width: 500px;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    gap: 5px; 
+  }
+
+  .hero-image {
+    margin: 0; 
+  }
+
+  .profile-image {
+    margin: 0 auto; 
+    max-width: 350px; 
+  }
+
+  .hero-text {
+    margin: 0 auto; 
+    text-align: center; 
+  }
+
+  /* Adjust Hero Text Sizes */
+  .hero-text h1 {
+    font-size: 3.5rem; 
+    line-height: 1.3; 
+  }
+
+  .hero-text p {
+    font-size: 1.6rem; 
+    line-height: 1.4; 
+  }
+    /* Adjust Underline Position for Mobile */
+    .hero-name .underline {
+      bottom: -35px; /* Bring underline closer to the text */
+    }
+}
+
+/* Navigation Bar */
+.hero-nav {
+  display: flex;
+  justify-content: center; 
+  gap: 30px; 
+  width: 100%; 
+  margin-bottom: 60px; 
+  margin-top: 30px;
+}
+
+.hero-nav a {
+  font-family: "Elza", sans-serif; 
+  font-size: 1rem;
+  color: #000000; 
+  text-decoration: none; 
+  position: relative; 
+  padding-bottom: 5px; 
+}
+
+.hero-nav a::after {
+  content: ""; 
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%; 
+  height: 2px; 
+  background-color: #344e41; 
+  opacity: 0; 
+  transform: scaleY(0); 
+  transform-origin: bottom; 
+  transition: transform 0.2s ease, opacity 0.2s ease; 
+}
+
+.hero-nav a:hover::after {
+  opacity: 1; 
+  transform: scaleY(1); 
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  justify-content: center; 
+  padding: 50px 20px; 
+}
+
+.about-container {
+  max-width: 1000px; 
+  background-color: #ffffff; 
+  border-radius: 15px; 
+  box-shadow: 3px 3px 3px rgba(205, 188, 188, 0.1); 
+  padding: 40px; 
+  text-align: left; 
+}
+
+/* About Heading */
+.about-container h2 {
+  font-family: "Recoleta", serif; 
+  font-size: 2.5rem; 
+  margin-bottom: 10px; 
+  margin-top: 0;
+}
+
+/* About Paragraph */
+.about-container p {
+  font-family: "Inter", sans-serif; 
+  font-size: 1.2rem; 
+  line-height: 1.8; 
+  color: #333333; 
+  margin: 0; 
+}
+
+/* Projects Section */
+.projects-section {
+  padding: 0px 20px;
+}
+
+.projects-container {
+  max-width: 1200px; 
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px; 
+}
+
+/* Projects Title */
+.projects-title {
+  font-family: "Recoleta", serif;
+  font-size: 4rem;
+  color: #000000;
+  margin-bottom: 40px;
+  text-align: left;
+  grid-column: 1 / -1; 
+}
+
+/* Project Card */
+.project-card {
+  background-color: #f8f6f3;
+  border-radius: 15px;
+  padding: 20px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  overflow: hidden; 
+  cursor: pointer; 
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.yellow-hover:hover {
+  background-color: #ffd966;
+}
+
+.blue-hover:hover {
+  background-color: #9ad6ff;
+}
+
+.red-hover:hover {
+  background-color: #f28b82; 
+}
+
+/* Image Swap */
+.project-image-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.default-image,
+.hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.default-image {
+  opacity: 1;
+  z-index: 1;
+}
+
+.hover-image {
+  opacity: 0;
+  z-index: 0;
+}
+
+.project-card:hover .default-image {
+  opacity: 0;
+}
+
+.project-card:hover .hover-image {
+  opacity: 1;
+}
+
+/* Project Content */
+.project-content {
+  text-align: left;
+}
+
+.project-card h3 {
+  font-family: "Recoleta", serif;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: #333333;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Links */
+.project-links {
+  display: flex;
+  gap: 10px;
+}
+
+.project-links a {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 5px 10px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.project-links a:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr; 
+  }
+
+  .projects-title {
+    font-size: 3rem;
+  }
+}
+
+/* Contact Section */
+.contact {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact p {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.contact a {
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.footer-message {
+  margin-top: 20px;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between the icons */
+  margin-top: 20px;
+}
+
+.social-link {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; 
+  background-color: #f8f6f3; 
+  color: #000000; 
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.social-link:hover {
+  transform: scale(1.1); /* Slightly larger on hover */
+}
