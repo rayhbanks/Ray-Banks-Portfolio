@@ -30,7 +30,7 @@ const Projects = () => {
           </div>
         </div>
 
-        {/* Where I've Been - Inclusive Project */}
+        {/* Where I've Been Inclusive (WIBI) Project */}
         <div className="project-card blue-hover">
           <div className="project-image-container">
             <img
@@ -49,6 +49,29 @@ const Projects = () => {
           <div className="project-links">
             <a href="#github-link-placeholder">GitHub</a>
             <a href="#live-demo-placeholder">Live Demo</a>
+          </div>
+        </div>
+        {/* My Portfolio Project */}
+        <div>
+          <div className="project-card yellow-hover">
+          <div className="project-image-container">
+            <img
+              src="./portfolio-screenshot.png"
+              alt="Ray's portfolio screenshot"
+              className="default-image"
+            />
+            <img
+              src="./portfolio-screenshot.png"
+              alt="Ray's portfolio screenshot"
+              className="hover-image"
+            />
+          </div>
+          <h3>My Portfolio</h3>
+          <p>This is my portfolio website which I created to practice learning React and showcase my work.</p>
+          <div className="project-links">
+            <a href="https://github.com/rayhbanks/Ray-Banks-Portfolio">GitHub</a>
+            <a href="https://ray-banks.com">Live Demo</a>
+          </div>
           </div>
         </div>
       </div>
