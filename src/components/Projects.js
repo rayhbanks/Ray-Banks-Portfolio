@@ -47,8 +47,8 @@ const Projects = () => {
           <h3>Where I've Been - Inclusive</h3>
           <p>Track the countries you've been to and choose whichever countries you'd like to count e.g. Taiwan, Palestine, etc. (this is under active development and will have regular updates)</p>
           <div className="project-links">
-            <a href="#https://github.com/rayhbanks/wibi-app">GitHub</a>
-            <a href="#https://ray-banks.com/wibi-app/">Live Demo</a>
+            <a href="https://github.com/rayhbanks/wibi-app">GitHub</a>
+            <a href="https://ray-banks.com/wibi-app/">Live Demo</a>
           </div>
         </div>
         {/* My Portfolio Project */}
