@@ -9,7 +9,12 @@ const Projects = () => {
         <h2 className="projects-title">Projects</h2>
 
         {/* Countdown to 100K Project */}
-        <div className="project-card red-hover">
+        <a
+          href="https://ray-banks.com/countdown-to-100k/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="project-card red-hover"
+        >
           <div className="project-image-container">
             <img
               src="./yt-100k-light-red.png"
@@ -28,10 +33,15 @@ const Projects = () => {
             <a href="https://github.com/rayhbanks/countdown-to-100k">GitHub</a>
             <a href="https://ray-banks.com/countdown-to-100k/">Live Demo</a>
           </div>
-        </div>
+        </a>
 
         {/* Where I've Been Inclusive (WIBI) Project */}
-        <div className="project-card blue-hover">
+        <a
+          href="https://ray-banks.com/wibi-app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="project-card blue-hover"
+        >
           <div className="project-image-container">
             <img
               src="./where-ive-been-blue.png"
@@ -50,10 +60,15 @@ const Projects = () => {
             <a href="https://github.com/rayhbanks/wibi-app">GitHub</a>
             <a href="https://ray-banks.com/wibi-app/">Live Demo</a>
           </div>
-        </div>
+        </a>
+
         {/* My Portfolio Project */}
-        <div>
-          <div className="project-card yellow-hover">
+        <a
+          href="https://ray-banks.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="project-card yellow-hover"
+        >
           <div className="project-image-container">
             <img
               src="./portfolio-screenshot.png"
@@ -61,8 +76,8 @@ const Projects = () => {
               className="default-image"
             />
             <img
-              src="./portfolio-screenshot.png"
-              alt="Ray's portfolio screenshot"
+              src="./portfolio-screenshot-hover.png"
+              alt="Ray's portfolio screenshot Hover"
               className="hover-image"
             />
           </div>
@@ -72,8 +87,7 @@ const Projects = () => {
             <a href="https://github.com/rayhbanks/Ray-Banks-Portfolio">GitHub</a>
             <a href="https://ray-banks.com">Live Demo</a>
           </div>
-          </div>
-        </div>
+        </a>
       </div>
     </section>
   );

@@ -8,6 +8,11 @@ body {
   font-family: 'Elza', sans-serif;
 }
 
+a {
+  text-decoration: none; /* Makes it so links like the project cards don't get underlined */
+  color: inherit; /* Inherits the text color of the parent element */
+}
+
 /* Container */
 .container {
   max-width: 1100px;
@@ -386,6 +391,7 @@ body {
   justify-content: center;
   gap: 20px; /* Space between the icons */
   margin-top: 20px;
+
 }
 
 .social-link {
